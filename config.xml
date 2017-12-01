@@ -88,6 +88,14 @@
     <plugin name="cordova-plugin-globalization" source="npm" />
 	<plugin name="cordova-plugin-media" spec="~4.0.0" source="npm"/>
 	<plugin source="git" spec="https://github.com/moust/cordova-plugin-videoplayer.git " />
+	<plugin source="git" spec="https://github.com/apache/cordova-plugin-media-capture.git" />
+	<plugin source="git" spec="https://github.com/apache/cordova-plugin-file.git  " />
+	
+	
+	<feature name="Camera">
+    <param name="android-package" value="org.apache.cordova.camera.CameraLauncher"/>
+    <param name="ios-package" value="CDVCamera" />
+</feature>
 	<feature name="VideoPlugin">
       <param name="android-package" value="com.phonegap.plugins.video.VideoPlugin" />
   </feature>
