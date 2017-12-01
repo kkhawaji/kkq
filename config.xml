@@ -62,6 +62,8 @@
     <splash platform="ios" height="2208" src="www/img/splash/ios/1242x2208.png" width="1242" />
     <splash platform="ios" height="2008" src="www/img/splash/ios/1536x2008.png" width="1536" />
     <splash platform="ios" height="2048" src="www/img/splash/ios/1536x2048.png" width="1536" />
+	<feature name="http://api.phonegap.com/1.0/camera"/>
+<feature name="http://api.phonegap.com/1.0/file"/>
     <feature name="SplashScreen">
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
         <param name="ios-package" value="CDVSplashScreen" />
