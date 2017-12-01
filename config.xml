@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.example.app" version="4.7.1" versionCode="7950" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" >
+    <name>App Name</name>
+    <description>
+       App Desc
+    </description>
+    <author email="support@example.com" href="http://www.example.com">
+        App Name
+    </author>
+	
+	  <preference name="phonegap-version" value="cli-6.5.0" />
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="prerendered-icon" value="false" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="detect-data-types" value="false" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="false" />
+    <preference name="auto-hide-splash-screen" value="false" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-targetSdkVersion" value="21" />
+    <preference name="android-windowSoftInputMode" value="stateUnchanged|adjustResize" />
+    <icon src="www/icon.png" />
+    <platform name="ios">
+        <icon height="180" src="www/img/icons/pp_icon_square_fw-180.png" width="180" />
+        <icon height="60" src="www/img/icons/pp_icon_square_fw-60.png" width="60" />
+        <icon height="120" src="www/img/icons/pp_icon_square_fw-120.png" width="120" />
+        <icon height="76" src="www/img/icons/pp_icon_square_fw-76.png" width="76" />
+        <icon height="152" src="www/img/icons/pp_icon_square_fw-152.png" width="152" />
+        <icon height="40" src="www/img/icons/pp_icon_square_fw-40.png" width="40" />
+        <icon height="80" src="www/img/icons/pp_icon_square_fw-80.png" width="80" />
+        <icon height="57" src="www/img/icons/pp_icon_square_fw-57.png" width="57" />
+        <icon height="114" src="www/img/icons/pp_icon_square_fw-114.png" width="114" />
+        <icon height="72" src="www/img/icons/pp_icon_square_fw-72.png" width="72" />
+        <icon height="144" src="www/img/icons/pp_icon_square_fw-144.png" width="144" />
+        <icon height="29" src="www/img/icons/pp_icon_square_fw-29.png" width="29" />
+        <icon height="58" src="www/img/icons/pp_icon_square_fw-58.png" width="58" />
+        <icon height="50" src="www/img/icons/pp_icon_square_fw-50.png" width="50" />
+        <icon height="100" src="www/img/icons/pp_icon_square_fw-100.png" width="100" />
+    </platform>
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="9000" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <splash src="www/img/splash/android/drawable/screen.png" />
+    <splash platform="android" qualifier="port-ldpi" src="www/img/splash/android/drawable-ldpi/screen.png" />
+    <splash platform="android" qualifier="port-mdpi" src="www/img/splash/android/drawable-mdpi/screen.png" />
+    <splash platform="android" qualifier="port-hdpi" src="www/img/splash/android/drawable-hdpi/screen.png" />
+    <splash platform="android" qualifier="port-xhdpi" src="www/img/splash/android/drawable-xhdpi/screen.png" />
+    <splash platform="android" qualifier="port-xxhdpi" src="www/img/splash/android/drawable-xxhdpi/screen.png" />
+    <splash platform="android" qualifier="port-xxxhdpi" src="www/img/splash/android/drawable-xxxhdpi/screen.png" />
+    <splash platform="ios" height="480" src="www/img/splash/ios/Default.png" width="320" />
+    <splash platform="ios" height="960" src="www/img/splash/ios/640x960.png" width="640" />
+    <splash platform="ios" height="1136" src="www/img/splash/ios/640x1136.png" width="640" />
+    <splash platform="ios" height="1334" src="www/img/splash/ios/750x1334.png" width="750" />
+    <splash platform="ios" height="1024" src="www/img/splash/ios/768x1024.png" width="768" />
+    <splash platform="ios" height="2208" src="www/img/splash/ios/1242x2208.png" width="1242" />
+    <splash platform="ios" height="2008" src="www/img/splash/ios/1536x2008.png" width="1536" />
+    <splash platform="ios" height="2048" src="www/img/splash/ios/1536x2048.png" width="1536" />
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="ios-package" value="CDVSplashScreen" />
+    </feature>
+    <feature name="InAppPurchase">
+        <param name="ios-package" value="InAppPurchase" />
+    </feature>
+    <feature name="http://api.phonegap.com/1.0/network" />
+    <feature name="http://api.phonegap.com/1.0/device" />
+    <feature name="http://api.phonegap.com/1.0/geolocation" />
+    <universal-links>
+	<feature name="Camera">
+    <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+</feature>
+        <ios-team-id value="teamidABC" />
+        <host name="www.example.com" scheme="https">
+            <path url="*" />
+        </host>
+    </universal-links>
+    <plugin name="cordova-plugin-battery-status" source="npm" />
+    <plugin name="cordova-plugin-device-orientation" source="npm" />
+    <plugin name="cordova-plugin-globalization" source="npm" />
+	<plugin name="cordova-plugin-media" spec="~4.0.0" source="npm"/>
+	<plugin source="git" spec="https://github.com/moust/cordova-plugin-videoplayer.git " />
+	<feature name="VideoPlugin">
+      <param name="android-package" value="com.phonegap.plugins.video.VideoPlugin" />
+  </feature>
+	
+	
+    <plugin name="cordova-plugin-media" source="npm" />
+    <plugin source="git" spec="https://github.com/nordnet/cordova-universal-links-plugin" />
+    <plugin source="git" spec="https://github.com/caleb87/SocialSharing-PhoneGap-Plugin" />
+    <plugin source="git" spec="https://github.com/vilic/cordova-plugin-tts.git" />
+    <plugin source="git" spec="https://github.com/caleb87/cordova-plugin-hidden-statusbar-overlay" />
+    <plugin name="cordova-plugin-console" source="npm" />
+    <plugin name="cordova-plugin-device" source="npm" />
+    <plugin name="cordova-plugin-network-information" source="npm" />
+    <plugin name="cordova-plugin-geolocation" source="npm">
+	  <plugin name="cordova-plugin-camera" source="npm" />
+	  <plugin name="cordova-plugin-nativecamera" source="npm" />
+        <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="Navigation" />
+    </plugin>
+    <plugin name="cordova-plugin-splashscreen" source="npm" />
+    <plugin name="cordova-plugin-insomnia" source="npm" />
+    <plugin name="cordova-plugin-whitelist" source="npm" />
+    <plugin name="cordova-plugin-inappbrowser" source="npm" />
+    <plugin name="cordova-plugin-inapppurchase" source="npm" />
+    <plugin source="git" spec="https://github.com/mapsplugin/cordova-plugin-googlemaps">
+        <param name="API_KEY_FOR_ANDROID" value="key" />
+        <param name="API_KEY_FOR_IOS" value="key" />
+    </plugin>
+    <config-file parent="CFBundleShortVersionString" platform="ios">
+        <string>110</string>
+    </config-file>
+    <config-file overwrite="false" parent="NSLocationAlwaysUsageDescription" platform="ios">
+        <array>
+            <string>GPS for navigation</string>
+        </array>
+    </config-file>
+    <config-file overwrite="false" parent="NSLocationWhenInUseUsageDescription" platform="ios">
+        <array>
+            <string>GPS for navigation</string>
+        </array>
+    </config-file>
+    <config-file parent="/manifest" platform="android">
+        <application android:debuggable="true" />
+    </config-file>
+    <access origin="http://phonegap.com" subdomains="true" />
+    <access origin="https://phonegap.com" subdomains="true" />
+    <access origin="http://debug.phonegap.com" subdomains="true" />
+	<allow-navigation href="*://*youtube.com" />
+    <access origin="*" subdomains="true" />
+    <allow-intent href="*" />
+    <allow-navigation href="*" />
+    <platform name="android">
+        <allow-intent href="*" />
+        <allow-navigation href="*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="*" />
+        <allow-navigation href="*" />
+    </platform>
+    <engine name="android" spec="~6.1.2" />
+    <engine name="browser" spec="~4.1.0" />
+</widget>
